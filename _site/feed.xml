@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Runner Deliveries</title>
+    <description>Runner, will delivery anything you want to your front door! You can either choose from our featured businesses or create a custom order! We encourage you to personalize your order to make sure that its EXACTLY what you want!</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 30 Jan 2017 02:25:56 -0600</pubDate>
+    <lastBuildDate>Mon, 30 Jan 2017 02:25:56 -0600</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+  </channel>
+</rss>
