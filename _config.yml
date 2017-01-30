@@ -1,0 +1,26 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: Runner Deliveries
+email: Runner@blank.com
+description: "Runner, will delivery anything you want to your front door! You can either choose from our featured businesses or create a custom order! We encourage you to personalize your order to make sure that its EXACTLY what you want!"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://runnerdeliveries.com" # the base hostname & protocol for your site
+
+collections:
+  blog:
+    output: true
+  features:
+    output: true
+
+# plugin_dir: _plugins
+gem: /plugins/Random.rb
+
+# Build settings
+markdown: kramdown
+# gem: random.rb

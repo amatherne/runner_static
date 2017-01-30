@@ -1,0 +1,12 @@
+---
+---
+[
+    {% for features in site.featuress %}
+    {
+      "features.title"    : "{{ features.title }}",
+      "features.url"     : "{{ features.url }}",
+      "features.image"     : "{{ site.baseurl }}{{ features.image }}"    
+    }
+    {% unless forloop.last %},{% endunless %}
+    {% endfor %}
+]

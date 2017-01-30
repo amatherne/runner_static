@@ -1,0 +1,52 @@
+---
+layout: page
+title: Order
+permalink: /order/
+---
+
+<div class="order">
+
+	<div class="hero">
+		
+		
+		<form action="{{ site.baseurl }}/order.php" id="form" method="POST" name="form">
+
+			<h2 class="title">Order</h2>
+	        <fieldset>
+	        	<div class="two-grid">
+		            <input class="input-reg" type="text" name="full_name" for="" placeholder="Your Full Name" />
+		            <input class="input-reg" type="text" name="phone" for="" placeholder="Phone Number" />
+		            <input class="input-reg" type="text" name="address" for="" placeholder="Address" />
+		            <input class="input-reg" type="text" name="email" for="" placeholder="Email Address" />
+	            </div>
+	            <div class="two-grid">
+	            	<input class="input-reg" type="text" name="store" for="" placeholder="Where Are You Ordering From?" />
+	            	<textarea class="large-box" rows="5" cols="80" name="order" for="" placeholder="List your order here! Don't be afraid to be specific!"></textarea>
+	            	<h3>Here's some ordering hints!</h3>
+	            	<h3>Ex: "2x - Heads of Iceberg Lettuce"</h3>
+	            	<h3>Ex: "1x - CrunchWrap Supreme w/ Large Coke(no ice)"</h3>
+	            </div>
+
+	          	<button class="button" type="submit" name="submit" value="submit"><span>Send</span></button>  
+	        </fieldset>
+      	</form>
+  		
+
+	</div>
+
+	<div id="grid" class="features">
+
+	{% assign sorted = (site.features | sort: 'random') %}
+    {% for features in sorted limit:12  %}
+
+    <a href="{{ features.url | prepend: site.baseurl }}" class="two-grid">
+      <img class="feat-img" src="{{ site.baseurl }}{{ features.image }}" alt="feature img"> 
+      <h4 class="feat-title">{{ features.title }}</h4>
+    </a>  
+    {% endfor %}
+
+
+  	</div>
+	
+
+</div>
